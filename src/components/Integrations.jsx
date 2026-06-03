@@ -1,4 +1,4 @@
-export default function Integrations() {
+﻿export default function Integrations() {
   const integrations = [
     { name: 'WhatsApp', color: '#25D366' },
     { name: 'Google Calendar', color: '#4285F4' },
@@ -18,9 +18,8 @@ export default function Integrations() {
     <section id="integrations">
       <div className="container">
         <div className="integrations-header fade-up">
-          <div className="section-label"><span></span>Integrations</div>
           <h2 className="section-title">Connect With Your Existing Stack</h2>
-          <p className="section-sub">Kastik plugs into the tools you already use — no rip-and-replace required.</p>
+          <p className="section-sub">Kastik plugs into the tools you already use â€” no rip-and-replace required.</p>
         </div>
         <div className="integrations-grid fade-up stagger-1">
           {integrations.map((item, i) => (

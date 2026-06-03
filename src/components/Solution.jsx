@@ -1,10 +1,9 @@
-export default function Solution() {
+﻿export default function Solution() {
   return (
     <section id="solution">
       <div className="container">
         <div className="solution-inner fade-up">
           <div className="solution-text">
-            <div className="section-label"><span></span>The Kastik Solution</div>
             <h2 className="section-title">One Platform for Every AI Workload</h2>
             <p className="section-sub" style={{ marginBottom: '1.5rem', maxWidth: '480px' }}>
               We abstract away the complexity of machine learning infrastructure so your team can focus on building magical product experiences.

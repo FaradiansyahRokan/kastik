@@ -1,17 +1,16 @@
-export default function Workflow() {
+﻿export default function Workflow() {
   return (
     <section id="workflow">
       <div className="container">
         <div className="workflow-header fade-up">
-          <div className="section-label"><span></span>How It Works</div>
           <h2 className="section-title">Live in 48 Hours</h2>
-          <p className="section-sub">From signup to your first automated customer conversation in under two days — no engineers required.</p>
+          <p className="section-sub">From signup to your first automated customer conversation in under two days â€” no engineers required.</p>
         </div>
         <div className="workflow-steps fade-up stagger-1">
           <div className="wf-step">
             <div className="wf-num">1</div>
             <h4 className="wf-title">Customer sends a message</h4>
-            <p className="wf-desc">On any channel — WhatsApp, website chat, Instagram, or email.</p>
+            <p className="wf-desc">On any channel â€” WhatsApp, website chat, Instagram, or email.</p>
           </div>
           <div className="wf-step">
             <div className="wf-num">2</div>

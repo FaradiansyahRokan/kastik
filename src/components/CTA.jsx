@@ -1,4 +1,4 @@
-export default function CTA() {
+﻿export default function CTA() {
   return (
     <section id="cta">
       <div className="cta-mesh"></div>
@@ -11,7 +11,7 @@ export default function CTA() {
             <button className="btn-cta-primary">Book a Demo</button>
             <button className="btn-cta-ghost">Contact Sales</button>
           </div>
-          <p style={{fontSize:'0.78rem',color:'rgba(255,255,255,0.5)',marginTop:'1.5rem'}}>No credit card required · 14-day free trial · Setup in 48 hours</p>
+          <p style={{fontSize:'0.78rem',color:'rgba(255,255,255,0.5)',marginTop:'1.5rem'}}>No credit card required Â· 14-day free trial Â· Setup in 48 hours</p>
         </div>
       </div>
     </section>

@@ -1,17 +1,16 @@
-export default function Security() {
+﻿export default function Security() {
   return (
     <section id="security">
       <div className="container">
         <div className="security-inner">
           <div className="fade-up">
-            <div className="section-label"><span></span>Security</div>
             <h2 className="section-title">Enterprise-Grade Security</h2>
             <p className="section-sub" style={{maxWidth:'100%'}}>Kastik is built on infrastructure that meets the highest standards of data privacy, compliance, and availability.</p>
             <div className="trust-badges">
-              <div className="trust-badge">✓ SOC 2 Type II</div>
-              <div className="trust-badge">✓ GDPR Compliant</div>
-              <div className="trust-badge">✓ HIPAA Ready</div>
-              <div className="trust-badge">✓ 99.9% Uptime SLA</div>
+              <div className="trust-badge">âœ“ SOC 2 Type II</div>
+              <div className="trust-badge">âœ“ GDPR Compliant</div>
+              <div className="trust-badge">âœ“ HIPAA Ready</div>
+              <div className="trust-badge">âœ“ 99.9% Uptime SLA</div>
             </div>
           </div>
           <div className="security-grid fade-up stagger-2">

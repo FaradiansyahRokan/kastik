@@ -1,9 +1,8 @@
-export default function Problems() {
+﻿export default function Problems() {
   return (
     <section id="problems">
       <div className="container">
         <div className="problems-header fade-up">
-          <div className="section-label" style={{ color: 'var(--primary2)', letterSpacing: '0.1em' }}>THE PROBLEM</div>
           <h2 className="section-title">AI Infrastructure is <span className="text-gradient-premium">Broken</span></h2>
           <p className="section-sub">Building and scaling enterprise AI from scratch takes too long, costs too much, and requires specialized talent that is hard to find.</p>
         </div>

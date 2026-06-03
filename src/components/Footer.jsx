@@ -1,4 +1,4 @@
-export default function Footer() {
+﻿export default function Footer() {
   return (
     <footer>
       <div className="container">
@@ -8,8 +8,8 @@ export default function Footer() {
             <p>Intelligent Customer Agents For Businesses That Want To Grow.</p>
             <div className="footer-social">
               <div className="social-btn">in</div>
-              <div className="social-btn">𝕏</div>
-              <div className="social-btn">◎</div>
+              <div className="social-btn">ð•</div>
+              <div className="social-btn">â—Ž</div>
             </div>
           </div>
           <div className="footer-col">

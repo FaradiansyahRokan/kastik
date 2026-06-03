@@ -1,4 +1,4 @@
-export default function Trust() {
+﻿export default function Trust() {
   return (
     <section id="trust">
       <div className="container">

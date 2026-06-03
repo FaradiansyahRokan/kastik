@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react'
+﻿import { useState, useEffect } from 'react'
 
 const projects = [
   {
     name: 'FolioML',
     subtitle: 'AI-Powered Knowledge Intelligence Platform',
-    description: 'FolioML transforms how professionals research and extract insights from complex documents. Built on a Retrieval-Augmented Generation (RAG) architecture, it grounds every answer in your private knowledge base — ensuring accuracy and trustworthiness.',
+    description: 'FolioML transforms how professionals research and extract insights from complex documents. Built on a Retrieval-Augmented Generation (RAG) architecture, it grounds every answer in your private knowledge base â€” ensuring accuracy and trustworthiness.',
     highlights: [
-      'Upload PDF, DOCX, CSV — AI extracts and indexes instantly',
+      'Upload PDF, DOCX, CSV â€” AI extracts and indexes instantly',
       '8 specialized AI Agents for multi-dimensional analysis',
       'Hybrid Retrieval Engine combines semantic search + BM25',
       'Persistent cloud-synced Notebooks accessible anywhere',
@@ -29,10 +29,10 @@ const projects = [
   {
     name: 'SalesSetter',
     subtitle: 'AI Sales Automation for WhatsApp',
-    description: 'SalesSetter deploys autonomous AI sales agents on WhatsApp that operate around the clock — understanding intent, qualifying prospects, and handing over high-value leads to human closers when it matters most.',
+    description: 'SalesSetter deploys autonomous AI sales agents on WhatsApp that operate around the clock â€” understanding intent, qualifying prospects, and handing over high-value leads to human closers when it matters most.',
     highlights: [
       'Autonomous AI handles complex multi-turn conversations',
-      'Dynamic lead scoring (Cold → Warm → Hot) based on intent',
+      'Dynamic lead scoring (Cold â†’ Warm â†’ Hot) based on intent',
       'Seamless human handover with real-time alerts',
       'Dashboard with pipeline tracking and conversion analytics',
     ],
@@ -70,7 +70,6 @@ export default function Showcase() {
     <section id="showcase">
       <div className="container">
         <div className="showcase-header fade-up">
-          <div className="section-label" style={{ color: 'var(--primary2)', letterSpacing: '0.1em' }}>OUR WORK</div>
           <h2 className="section-title">Projects We've <span className="text-gradient-premium">Built</span></h2>
           <p className="section-sub">Real AI-powered products we've designed and deployed for modern businesses.</p>
         </div>
@@ -97,7 +96,7 @@ export default function Showcase() {
                 <div className="sb-features">
                   {project.highlights.map((h, i) => (
                     <div key={i} className="sb-feature">
-                      <span className="sb-check">✓</span> <span>{h}</span>
+                      <span className="sb-check">âœ“</span> <span>{h}</span>
                     </div>
                   ))}
                 </div>
@@ -107,13 +106,13 @@ export default function Showcase() {
               <div className="sb-gallery">
                 <div className="sb-gallery-main" onClick={() => setLightboxImg(project.images[0].src)}>
                   <img src={project.images[0].src} alt={project.images[0].label} />
-                  <div className="sb-img-overlay"><span className="sb-img-label">🔍 {project.images[0].label}</span></div>
+                  <div className="sb-img-overlay"><span className="sb-img-label">ðŸ” {project.images[0].label}</span></div>
                 </div>
                 <div className="sb-gallery-sub">
                   {project.images.slice(1).map((img, i) => (
                     <div key={i} className="sb-gallery-item" onClick={() => setLightboxImg(img.src)}>
                       <img src={img.src} alt={img.label} />
-                      <div className="sb-img-overlay"><span className="sb-img-label">🔍 {img.label}</span></div>
+                      <div className="sb-img-overlay"><span className="sb-img-label">ðŸ” {img.label}</span></div>
                     </div>
                   ))}
                 </div>
@@ -126,7 +125,7 @@ export default function Showcase() {
       {/* Lightbox Modal */}
       {lightboxImg && (
         <div className="lightbox" onClick={() => setLightboxImg(null)}>
-          <button className="lightbox-close" onClick={() => setLightboxImg(null)}>×</button>
+          <button className="lightbox-close" onClick={() => setLightboxImg(null)}>Ã—</button>
           <img src={lightboxImg} alt="Enlarged view" onClick={(e) => e.stopPropagation()} />
         </div>
       )}

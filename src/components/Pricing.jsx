@@ -1,9 +1,8 @@
-export default function Pricing() {
+﻿export default function Pricing() {
   return (
     <section id="pricing">
       <div className="container">
         <div className="pricing-header fade-up">
-          <div className="section-label"><span></span>Pricing</div>
           <h2 className="section-title">Simple, Predictable Pricing</h2>
           <p className="section-sub">Start free, scale without surprises. Every plan includes unlimited conversations and core AI features.</p>
         </div>

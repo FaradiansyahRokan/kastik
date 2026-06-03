@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+﻿import { useEffect } from 'react'
 
 export default function Features() {
   useEffect(() => {
@@ -18,7 +18,6 @@ export default function Features() {
     <section id="features">
       <div className="container">
         <div className="features-header fade-up">
-          <div className="section-label"><span></span>Core Infrastructure</div>
           <h2 className="section-title">Everything to Build Advanced AI</h2>
           <p className="section-sub">A complete ecosystem for training, deploying, and monitoring autonomous systems and machine learning models.</p>
         </div>
