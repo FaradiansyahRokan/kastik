@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import smallLogo from '../assets/logos.png'
 
 export default function Hero() {
   const [lines, setLines] = useState([])
@@ -141,7 +142,7 @@ export default function Hero() {
             <div className="prompt-messages">
               {lines.map((msg, i) => (
                 <div key={i} className={`msg-bubble ${msg.role} fade-in-up`}>
-                  {msg.role === 'ai' && <div className="msg-avatar">K</div>}
+                  {msg.role === 'ai' && <div className="msg-avatar"><img src={smallLogo} alt="K" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }}/></div>}
                   <div className="msg-content">
                     {msg.text}
                     {msg.component && (
@@ -154,7 +155,7 @@ export default function Hero() {
               ))}
               {isThinking && (
                 <div className="msg-bubble ai fade-in-up">
-                  <div className="msg-avatar">K</div>
+                  <div className="msg-avatar"><img src={smallLogo} alt="K" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }}/></div>
                   <div className="msg-content thinking">
                     <span></span><span></span><span></span>
                   </div>

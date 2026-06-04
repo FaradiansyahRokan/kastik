@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import kastikLogo from '../assets/logos.png'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -23,8 +24,7 @@ export default function Navbar() {
     <>
       <nav id="navbar" className={scrolled ? 'scrolled premium-nav' : 'premium-nav'}>
         <div className="nav-logo">
-          <div className="nav-logo-icon"></div>
-          KASTIK
+          <img src={kastikLogo} alt="Kastik Logo" style={{ height: '42px', width: 'auto' }} />
         </div>
 
         {/* Desktop Nav Links */}

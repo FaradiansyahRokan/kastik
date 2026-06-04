@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import smallLogo from '../assets/logos.png'
 
 const messages = [
   { role: 'customer', text: "Hi, I'd like to know more about your services.", time: '2:31 PM' },
@@ -79,7 +80,9 @@ export default function DemoChat() {
           <div className="fade-up stagger-2">
             <div className="chat-window" id="chatWindow">
               <div className="chat-header">
-                <div className="chat-header-avatar">K</div>
+                <div className="chat-header-avatar">
+                  <img src={smallLogo} alt="Kastik" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
+                </div>
                 <div>
                   <div className="chat-header-name">Kastik Assistant</div>
                   <div className="chat-header-status">

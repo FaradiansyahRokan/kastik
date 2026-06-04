@@ -1,10 +1,14 @@
+import kastikLogo from '../assets/2.png'
+
 export default function Footer() {
   return (
     <footer>
       <div className="container">
         <div className="footer-top">
           <div className="footer-brand">
-            <div className="logo">KASTIK</div>
+            <div className="logo">
+              <img src={kastikLogo} alt="Kastik Logo" style={{ height: '170px', width: 'auto', display: 'block' }} />
+            </div>
             <p>Intelligent Customer Agents For Businesses That Want To Grow.</p>
             <div className="footer-social">
               <div className="social-btn" title="LinkedIn">
