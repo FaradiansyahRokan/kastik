@@ -120,7 +120,7 @@ export default function Hero() {
           </h1>
           
           <p className="hero-sub premium-sub">
-            Design, deploy, and scale enterprise-grade Machine Learning models, autonomous agents, and predictive AI solutions &mdash; built for companies that demand intelligent infrastructure.
+            Design, deploy, and scale enterprise-grade Machine Learning models, autonomous agents, and predictive AI solutions built for companies that demand intelligent infrastructure.
           </p>
           
           <div className="hero-cta-wrapper fade-up stagger-1">

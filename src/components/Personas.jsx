@@ -15,22 +15,39 @@ export default function Personas() {
         {/* Dual Path Grid */}
         <div className="personas-grid">
           
-          {/* Card 1: Developers / AI Engineers */}
-          <div className="persona-card dark-card fade-up stagger-1">
+          {/* Card 1: AI Engineers */}
+          <div className="persona-card fade-up stagger-1">
+            {/* Top: Text Content */}
             <div className="persona-content">
+              <div className="persona-tag">For Developers</div>
               <h3>For AI Engineers</h3>
               <p className="persona-sub">Kastik provides raw access to inference endpoints and orchestration layers.</p>
               
               <ul className="persona-features">
-                <li><span className="plus-icon">&#10022;</span> Low-latency inference APIs</li>
-                <li><span className="plus-icon">&#10022;</span> Fine-tune custom LLMs and Vector DBs</li>
-                <li><span className="plus-icon">&#10022;</span> Build complex RAG pipelines in code</li>
+                <li>
+                  <span className="persona-check">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  Low-latency inference APIs
+                </li>
+                <li>
+                  <span className="persona-check">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  Fine-tune custom LLMs and Vector DBs
+                </li>
+                <li>
+                  <span className="persona-check">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  Build complex RAG pipelines in code
+                </li>
               </ul>
               
               <button className="persona-btn">Explore Documentation</button>
             </div>
             
-            {/* Graphic Element */}
+            {/* Bottom: Code Graphic */}
             <div className="persona-graphic dev-graphic">
               <div className="mock-code-window">
                 <div className="mock-header">
@@ -39,7 +56,7 @@ export default function Personas() {
                 <div className="mock-body">
                   <div className="line"><span className="kw">import</span> {'{'} KastikClient {'}'} <span className="kw">from</span> <span className="str">'@kastik/sdk'</span>;</div>
                   <div className="line"><span className="kw">const</span> ai = <span className="kw">new</span> <span className="fn">KastikClient</span>(API_KEY);</div>
-                  <br />
+                  <div className="line">&nbsp;</div>
                   <div className="line"><span className="kw">const</span> result = <span className="kw">await</span> ai.rag.<span className="fn">query</span>({'{'}</div>
                   <div className="line indent">vectorDb: <span className="str">'enterprise_docs'</span>,</div>
                   <div className="line indent">model: <span className="str">'Kastik-Omni-v2'</span></div>
@@ -49,24 +66,41 @@ export default function Personas() {
             </div>
           </div>
 
-          {/* Card 2: Enterprise / Business */}
-          <div className="persona-card dark-card fade-up stagger-2">
+          {/* Card 2: Enterprise */}
+          <div className="persona-card fade-up stagger-2">
+            {/* Top: Text Content */}
             <div className="persona-content">
+              <div className="persona-tag">For Business</div>
               <h3>For Enterprise</h3>
               <p className="persona-sub">Automate workflows and deploy AI agents across your company without writing code.</p>
               
               <ul className="persona-features">
-                <li><span className="plus-icon">&#10022;</span> Deploy autonomous agents instantly</li>
-                <li><span className="plus-icon">&#10022;</span> Native CRM &amp; ERP integrations</li>
-                <li><span className="plus-icon">&#10022;</span> Reduce operational costs by 60%</li>
+                <li>
+                  <span className="persona-check">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  Deploy autonomous agents instantly
+                </li>
+                <li>
+                  <span className="persona-check">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  Native CRM &amp; ERP integrations
+                </li>
+                <li>
+                  <span className="persona-check">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  Reduce operational costs by 60%
+                </li>
               </ul>
               
               <button className="persona-btn">Talk to Sales</button>
             </div>
             
-            {/* Graphic Element */}
+            {/* Bottom: Cube Graphic */}
             <div className="persona-graphic biz-graphic">
-              <div className="glowing-cube-wrapper">
+              <div className="cube-scene">
                 <div className="glowing-cube">
                   <div className="cube-face top"></div>
                   <div className="cube-face left"></div>

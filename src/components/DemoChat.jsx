@@ -60,7 +60,7 @@ export default function DemoChat() {
         <div className="demo-inner">
           <div className="fade-up">
             <h2 className="section-title">See Kastik In Action</h2>
-            <p className="section-sub" style={{maxWidth:'100%'}}>Watch how Kastik handles a real customer inquiry &mdash; qualifying the lead and guiding them toward a booking without any human input.</p>
+            <p className="section-sub" style={{maxWidth:'100%'}}>Watch how Kastik handles a real customer inquiry qualifying the lead and guiding them toward a booking without any human input.</p>
             <div style={{marginTop:'2rem',display:'flex',flexDirection:'column',gap:'0.875rem'}}>
               <div style={{display:'flex',alignItems:'center',gap:'0.75rem',fontSize:'0.875rem',color:'var(--muted)'}}>
                 <span style={{width:'32px',height:'32px',borderRadius:'50%',background:'rgba(91,78,232,0.1)',display:'flex',alignItems:'center',justifyContent:'center',color:'var(--primary)',flexShrink:0,fontWeight:600}}>1</span>
@@ -72,7 +72,7 @@ export default function DemoChat() {
               </div>
               <div style={{display:'flex',alignItems:'center',gap:'0.75rem',fontSize:'0.875rem',color:'var(--muted)'}}>
                 <span style={{width:'32px',height:'32px',borderRadius:'50%',background:'rgba(91,78,232,0.1)',display:'flex',alignItems:'center',justifyContent:'center',color:'var(--primary)',flexShrink:0,fontWeight:600}}>3</span>
-                Moves them toward booking &mdash; no human needed
+                Moves them toward booking no human needed
               </div>
             </div>
           </div>
