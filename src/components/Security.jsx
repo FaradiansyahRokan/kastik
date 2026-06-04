@@ -1,4 +1,4 @@
-﻿export default function Security() {
+export default function Security() {
   return (
     <section id="security">
       <div className="container">
@@ -7,10 +7,22 @@
             <h2 className="section-title">Enterprise-Grade Security</h2>
             <p className="section-sub" style={{maxWidth:'100%'}}>Kastik is built on infrastructure that meets the highest standards of data privacy, compliance, and availability.</p>
             <div className="trust-badges">
-              <div className="trust-badge">âœ“ SOC 2 Type II</div>
-              <div className="trust-badge">âœ“ GDPR Compliant</div>
-              <div className="trust-badge">âœ“ HIPAA Ready</div>
-              <div className="trust-badge">âœ“ 99.9% Uptime SLA</div>
+              <div className="trust-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                SOC 2 Type II
+              </div>
+              <div className="trust-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                GDPR Compliant
+              </div>
+              <div className="trust-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                HIPAA Ready
+              </div>
+              <div className="trust-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                99.9% Uptime SLA
+              </div>
             </div>
           </div>
           <div className="security-grid fade-up stagger-2">

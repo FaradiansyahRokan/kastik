@@ -1,4 +1,4 @@
-﻿export default function Personas() {
+export default function Personas() {
   return (
     <section id="personas" className="personas-section">
       <div className="container">
@@ -22,9 +22,9 @@
               <p className="persona-sub">Kastik provides raw access to inference endpoints and orchestration layers.</p>
               
               <ul className="persona-features">
-                <li><span className="plus-icon">âœ¦</span> Low-latency inference APIs</li>
-                <li><span className="plus-icon">âœ¦</span> Fine-tune custom LLMs and Vector DBs</li>
-                <li><span className="plus-icon">âœ¦</span> Build complex RAG pipelines in code</li>
+                <li><span className="plus-icon">&#10022;</span> Low-latency inference APIs</li>
+                <li><span className="plus-icon">&#10022;</span> Fine-tune custom LLMs and Vector DBs</li>
+                <li><span className="plus-icon">&#10022;</span> Build complex RAG pipelines in code</li>
               </ul>
               
               <button className="persona-btn">Explore Documentation</button>
@@ -56,9 +56,9 @@
               <p className="persona-sub">Automate workflows and deploy AI agents across your company without writing code.</p>
               
               <ul className="persona-features">
-                <li><span className="plus-icon">âœ¦</span> Deploy autonomous agents instantly</li>
-                <li><span className="plus-icon">âœ¦</span> Native CRM & ERP integrations</li>
-                <li><span className="plus-icon">âœ¦</span> Reduce operational costs by 60%</li>
+                <li><span className="plus-icon">&#10022;</span> Deploy autonomous agents instantly</li>
+                <li><span className="plus-icon">&#10022;</span> Native CRM &amp; ERP integrations</li>
+                <li><span className="plus-icon">&#10022;</span> Reduce operational costs by 60%</li>
               </ul>
               
               <button className="persona-btn">Talk to Sales</button>

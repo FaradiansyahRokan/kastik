@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function Hero() {
   const [lines, setLines] = useState([])
@@ -111,7 +111,8 @@ export default function Hero() {
       <div className="container relative-z">
         <div className="hero-content fade-up">
           <div className="premium-eyebrow">
-            <span className="star-icon">â˜…</span> 5.0 over 500+ Enterprise Clients
+            <svg className="star-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style={{color:'var(--primary)',verticalAlign:'middle'}}><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>{' '}
+            5.0 over 500+ Enterprise Clients
           </div>
           
           <h1 className="hero-h1 premium-h1">
@@ -119,7 +120,7 @@ export default function Hero() {
           </h1>
           
           <p className="hero-sub premium-sub">
-            Design, deploy, and scale enterprise-grade Machine Learning models, autonomous agents, and predictive AI solutions â€” built for companies that demand intelligent infrastructure.
+            Design, deploy, and scale enterprise-grade Machine Learning models, autonomous agents, and predictive AI solutions &mdash; built for companies that demand intelligent infrastructure.
           </p>
           
           <div className="hero-cta-wrapper fade-up stagger-1">
