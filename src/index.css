@@ -664,7 +664,7 @@ section{position:relative;z-index:1}
 .security-card p{font-size:0.875rem;color:rgba(255,255,255,0.6);line-height:1.7}
 .security-card.full-width{grid-column:span 2}
 .trust-badges{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.5rem}
-.trust-badge{display:flex;align-items:center;gap:0.625rem;background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.25);border-radius:100px;padding:0.5rem 1.25rem;font-size:0.85rem;font-weight:700;color:var(--primary2)}
+.trust-badge{display:flex;align-items:center;gap:0.5rem;background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.25);border-radius:100px;padding:0.5rem 1.25rem;font-size:0.85rem;font-weight:700;color:var(--primary2)}
 
 /* ========================
    PRICING
@@ -702,7 +702,7 @@ section{position:relative;z-index:1}
 .faq-item.open{border-color:rgba(139,92,246,0.3);background:#fff;box-shadow:0 10px 30px rgba(139,92,246,0.05)}
 .faq-q{padding:1.5rem;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;user-select:none}
 .faq-q-text{font-size:0.95rem;font-weight:600;color:var(--text)}
-.faq-chevron{font-size:1.1rem;color:var(--muted);transition:transform 0.3s;flex-shrink:0}
+.faq-chevron{width:20px;height:20px;color:var(--muted);transition:transform 0.3s, color 0.3s;flex-shrink:0}
 .faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--primary)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height 0.4s ease}
 .faq-a-inner{padding:0 1.5rem 1.5rem;font-size:0.9rem;color:var(--muted);line-height:1.7}
