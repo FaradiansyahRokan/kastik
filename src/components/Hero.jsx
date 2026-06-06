@@ -113,26 +113,29 @@ export default function Hero() {
         <div className="hero-content fade-up">
           <div className="premium-eyebrow">
             <svg className="star-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style={{color:'var(--primary)',verticalAlign:'middle'}}><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>{' '}
-            5.0 over 500+ Enterprise Clients
+            Kastik &middot; Multi-Purpose AI Application Platform
           </div>
           
           <h1 className="hero-h1 premium-h1">
-            Build next-generation AI and autonomous systems on the <span className="text-gradient-premium">Kastik platform.</span>
+            Build any AI app.<br />Ship in <span className="text-gradient-premium">48 hours.</span>
           </h1>
           
           <p className="hero-sub premium-sub">
-            Design, deploy, and scale enterprise-grade Machine Learning models, autonomous agents, and predictive AI solutions built for companies that demand intelligent infrastructure.
+            Kastik is the infrastructure layer for building production-grade AI applications &mdash; sales agents, research tools, customer ops, and automation workflows &mdash; without stitching together ten different APIs.
           </p>
           
           <div className="hero-cta-wrapper fade-up stagger-1">
-            <div className="premium-input-group">
-              <input type="email" placeholder="Enter your email address..." className="premium-input" />
-              <button className="premium-btn">
-                <span className="btn-glow"></span>
-                Get started free
+            <div className="cta-btns" style={{justifyContent: 'center', marginTop: '0', display: 'flex', gap: '1rem', flexWrap: 'wrap'}}>
+              <button className="btn-cta-primary" style={{padding: '1rem 2rem', fontSize: '1rem', borderRadius: '12px'}}>
+                Start building free &rarr;
+              </button>
+              <button className="btn-ghost" style={{padding: '1.1rem 2.5rem', fontSize: '1rem', borderRadius: '12px', border: '1px solid rgba(0,0,0,0.1)', background: '#fff', color: 'var(--text)', fontWeight: 600, boxShadow: '0 4px 14px rgba(0,0,0,0.05)'}}>
+                See live demos
               </button>
             </div>
-            <p className="hero-micro">Don't want to wait? <a href="#" className="premium-link">Try the early AI Beta today.</a></p>
+            <p className="hero-micro" style={{marginTop: '1.5rem', color: 'rgba(255,255,255,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', flexWrap: 'wrap'}}>
+              SOC 2 Type II &middot; Setup in under 48 hours
+            </p>
           </div>
         </div>
 

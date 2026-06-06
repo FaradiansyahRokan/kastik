@@ -2,20 +2,24 @@ import { useState } from 'react'
 
 const faqData = [
   {
-    question: 'Is Kastik a chatbot?',
-    answer: 'No. Kastik is an AI Customer Agent - a fundamentally different class of product. Traditional chatbots follow rigid decision trees and fail the moment a customer asks something unexpected. Kastik uses large language models to understand natural conversation, remember context across a session, and generate intelligent responses that feel genuinely human.'
+    question: 'Is Kastik a chatbot or a platform?',
+    answer: 'It is a platform. Kastik is an infrastructure layer for building various AI applications. Ready-made apps like SalesSetter or FolioML are just some of the applications built on top of Kastik — not the entirety of our product.'
   },
   {
-    question: 'Can Kastik learn our company data?',
-    answer: 'Yes, absolutely. During onboarding you connect Kastik to your knowledge sources - documents, PDFs, URLs, FAQs, help center articles, and product pages. Kastik indexes this content and uses it to answer customer questions accurately. You can update the knowledge base at any time, and changes take effect within minutes.'
+    question: 'How is Kastik different from buying individual AI tools?',
+    answer: 'When you buy single vertical tools, you pay repeatedly for each use case, and your data remains siloed. With Kastik, all your AI applications share one knowledge base, one observability dashboard, and one API key.'
   },
   {
-    question: 'Which platforms and channels are supported?',
-    answer: 'Kastik currently supports WhatsApp Business, website chat widgets, Instagram Direct Messages, Gmail, Slack, Telegram, and Microsoft Teams. We also offer API access for custom integrations.'
+    question: 'Do I need engineers to get started?',
+    answer: 'No, not if you use our App Templates. They are ready to deploy out-of-the box. For custom applications via the Builder, you can either use our visual workflow builder or have your developers integrate our REST/GraphQL API.'
   },
   {
-    question: 'Is customer data secure and private?',
-    answer: 'Security is foundational at Kastik. All data is encrypted at rest using AES-256 and in transit using TLS 1.3. We are SOC 2 Type II certified and GDPR compliant. Conversation data is never used to train AI models for other customers - your data belongs entirely to you.'
+    question: 'How long does setup take?',
+    answer: 'App Templates can be live in 48 hours. Custom applications via the Builder take longer depending on the complexity of your workflow.'
+  },
+  {
+    question: 'Will the AI hallucinate and give false information?',
+    answer: 'No. As long as you use our RAG pipeline, the AI answers strictly based on the documents you upload. If the information is not in the knowledge base, the AI is programmed to say it doesn\'t know, rather than making things up.'
   }
 ]
 

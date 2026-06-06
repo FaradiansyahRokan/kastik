@@ -1,4 +1,4 @@
-﻿import { useEffect } from 'react'
+import { useEffect } from 'react'
 
 export default function Features() {
   useEffect(() => {
@@ -18,8 +18,8 @@ export default function Features() {
     <section id="features">
       <div className="container">
         <div className="features-header fade-up">
-          <h2 className="section-title">Everything to Build Advanced AI</h2>
-          <p className="section-sub">A complete ecosystem for training, deploying, and monitoring autonomous systems and machine learning models.</p>
+          <h2 className="section-title">The <span className="text-gradient-premium">Core Engine</span></h2>
+          <p className="section-sub">The hardest part of AI isn't the model — it's the infrastructure around it. Kastik abstracts the RAG pipeline, vector memory, agent orchestration, and observability layer.</p>
         </div>
         <div className="bento">
           <div className="bento-card large fade-up stagger-1">

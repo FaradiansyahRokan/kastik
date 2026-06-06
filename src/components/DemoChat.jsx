@@ -2,10 +2,10 @@ import { useState, useEffect, useRef } from 'react'
 import smallLogo from '../assets/logos.png'
 
 const messages = [
-  { role: 'customer', text: "Hi, I'd like to know more about your services.", time: '2:31 PM' },
-  { role: 'agent', text: "Of course! I'm Kastik, your AI assistant. Could you tell me a little about your business?", time: '2:31 PM' },
-  { role: 'customer', text: "We run an online store - mostly home decor.", time: '2:32 PM' },
-  { role: 'agent', text: "Perfect. Our AI Customer Agent can automatically answer product inquiries, qualify leads, and support customers 24/7 - even while your team sleeps. Would you like to see how it could work for your store?", time: '2:32 PM' },
+  { role: 'customer', text: "I need a custom agent that can answer questions based on our API documentation.", time: '10:02 AM' },
+  { role: 'agent', text: "Done. I've created the 'API Support' agent and connected it to your developer portal. The vector database is indexed and ready for RAG.", time: '10:02 AM' },
+  { role: 'customer', text: "Perfect. Can I get the endpoint to deploy it to our web app?", time: '10:03 AM' },
+  { role: 'agent', text: "Your endpoint is live at api.kastik.ai/v1/agents/api-support/chat. Ready to accept queries in production.", time: '10:03 AM' },
 ]
 
 export default function DemoChat() {
@@ -60,20 +60,20 @@ export default function DemoChat() {
       <div className="container">
         <div className="demo-inner">
           <div className="fade-up">
-            <h2 className="section-title">See Kastik In Action</h2>
-            <p className="section-sub" style={{maxWidth:'100%'}}>Watch how Kastik handles a real customer inquiry qualifying the lead and guiding them toward a booking without any human input.</p>
+            <h2 className="section-title">The <span className="text-gradient-premium">Builder</span></h2>
+            <p className="section-sub" style={{maxWidth:'100%'}}>For teams with unique workflows. A visual agent builder + API-first access lets you compose custom AI applications using the same powerful infrastructure.</p>
             <div style={{marginTop:'2rem',display:'flex',flexDirection:'column',gap:'0.875rem'}}>
               <div style={{display:'flex',alignItems:'center',gap:'0.75rem',fontSize:'0.875rem',color:'var(--muted)'}}>
                 <span style={{width:'32px',height:'32px',borderRadius:'50%',background:'rgba(91,78,232,0.1)',display:'flex',alignItems:'center',justifyContent:'center',color:'var(--primary)',flexShrink:0,fontWeight:600}}>1</span>
-                Kastik responds in under 1 second
+                Define custom tools and personas
               </div>
               <div style={{display:'flex',alignItems:'center',gap:'0.75rem',fontSize:'0.875rem',color:'var(--muted)'}}>
                 <span style={{width:'32px',height:'32px',borderRadius:'50%',background:'rgba(91,78,232,0.1)',display:'flex',alignItems:'center',justifyContent:'center',color:'var(--primary)',flexShrink:0,fontWeight:600}}>2</span>
-                Automatically qualifies the customer
+                Connect your proprietary data for RAG
               </div>
               <div style={{display:'flex',alignItems:'center',gap:'0.75rem',fontSize:'0.875rem',color:'var(--muted)'}}>
                 <span style={{width:'32px',height:'32px',borderRadius:'50%',background:'rgba(91,78,232,0.1)',display:'flex',alignItems:'center',justifyContent:'center',color:'var(--primary)',flexShrink:0,fontWeight:600}}>3</span>
-                Moves them toward booking no human needed
+                Deploy as a REST API in one click
               </div>
             </div>
           </div>

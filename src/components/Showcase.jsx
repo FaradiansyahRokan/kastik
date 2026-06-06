@@ -101,8 +101,8 @@ export default function Showcase() {
     <section id="showcase">
       <div className="container">
         <div className="showcase-header fade-up">
-          <h2 className="section-title">Projects We've <span className="text-gradient-premium">Built</span></h2>
-          <p className="section-sub">Real AI-powered products we've designed and deployed for modern businesses.</p>
+          <h2 className="section-title">AI apps, <span className="text-gradient-premium">ready to deploy</span></h2>
+          <p className="section-sub">Not demos &mdash; production systems. Each includes a complete backend, live dashboard, and integrations.</p>
         </div>
 
         {/* Stacked Case Studies */}
@@ -119,7 +119,7 @@ export default function Showcase() {
                 <div className="showcase-bento">
                   {/* Left Side: Content */}
                   <div className="sb-content">
-                    <div className="sb-badge">Case Study</div>
+                    <div className="sb-badge">App Template</div>
                     <h3 className="sb-title">{project.name}</h3>
                     <p className="sb-subtitle">{project.subtitle}</p>
                     <p className="sb-desc">{project.description}</p>

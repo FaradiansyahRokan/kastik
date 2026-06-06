@@ -3,7 +3,6 @@ import useFadeUp from './hooks/useFadeUp'
 import ParticlesBackground from './components/ParticlesBackground'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Trust from './components/Trust'
 import Problems from './components/Problems'
 import Solution from './components/Solution'
 import Features from './components/Features'
@@ -27,7 +26,6 @@ export default function App() {
       <ParticlesBackground />
       <Navbar />
       <Hero />
-      <Trust />
       <Problems />
       <Solution />
       <Features />

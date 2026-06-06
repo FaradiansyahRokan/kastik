@@ -29,9 +29,9 @@ export default function Navbar() {
 
         {/* Desktop Nav Links */}
         <div className="nav-links">
-          <a href="#features">Platform</a>
-          <a href="#solution">Solutions</a>
-          <a href="#showcase">Case Studies</a>
+          <a href="#showcase">Products</a>
+          <a href="#industries">Use Cases</a>
+          <a href="#features">Developers</a>
           <a href="#pricing">Pricing</a>
         </div>
 
@@ -56,9 +56,9 @@ export default function Navbar() {
       <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
         <div className="mobile-menu-inner">
           <nav className="mobile-nav-links">
-            <a href="#features" onClick={handleNavClick}>Platform</a>
-            <a href="#solution" onClick={handleNavClick}>Solutions</a>
-            <a href="#showcase" onClick={handleNavClick}>Case Studies</a>
+            <a href="#showcase" onClick={handleNavClick}>Products</a>
+            <a href="#industries" onClick={handleNavClick}>Use Cases</a>
+            <a href="#features" onClick={handleNavClick}>Developers</a>
             <a href="#pricing" onClick={handleNavClick}>Pricing</a>
           </nav>
           <div className="mobile-nav-btns">

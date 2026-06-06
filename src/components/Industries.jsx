@@ -1,11 +1,11 @@
 export default function Industries() {
   const industries = [
-    { icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>, title: 'SaaS & Tech', desc: 'Handle trial support, onboarding questions, and feature requests - converting free users to paid at scale.' },
-    { icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>, title: 'Agencies', desc: 'Qualify inbound leads, capture project briefs, and book discovery calls - even when your team is deep in client work.' },
-    { icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>, title: 'E-Commerce', desc: 'Answer product questions, handle order tracking, and turn browsers into buyers with personalized recommendations.' },
-    { icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>, title: 'Healthcare', desc: 'Book patient appointments, answer FAQs, and triage inquiries - HIPAA-compliant and always available.' },
-    { icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>, title: 'Education', desc: 'Guide prospective students through enrollment, answer curriculum questions, and capture admissions leads 24/7.' },
-    { icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>, title: 'Influencer Management', desc: 'Manage brand partnership inquiries, fan DMs, and sponsorship requests at scale without personal bandwidth.' },
+    { icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>, title: 'Low-latency Inference', desc: 'Optimized models and routing infrastructure delivering under 1 second end-to-end response times.' },
+    { icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>, title: 'Custom LLM Fine-tuning', desc: 'Securely fine-tune leading open-source models on your proprietary datasets without data leakage.' },
+    { icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>, title: 'Complex RAG Pipelines', desc: 'Build Retrieval-Augmented Generation workflows via our visual builder or code, complete with vector DBs.' },
+    { icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>, title: 'GraphQL + REST API', desc: 'One endpoint per deployment. Integrate computer vision, NLP, and predictive models into your apps.' },
+    { icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>, title: 'Full Observability', desc: 'Real-time dashboard for tracking latency, token usage, cost, and automated model drift detection.' },
+    { icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>, title: 'Enterprise Security', desc: 'SOC 2 Type II compliant, HIPAA-ready, and multi-tenant isolation. Your data never leaves your environment.' },
   ]
 
   const staggers = ['stagger-1', 'stagger-2', 'stagger-3', 'stagger-1', 'stagger-2', 'stagger-3']
@@ -14,8 +14,8 @@ export default function Industries() {
     <section id="industries">
       <div className="container">
         <div className="industries-header fade-up">
-          <h2 className="section-title">Built For Every Customer-Focused Business</h2>
-          <p className="section-sub">Kastik adapts to your industry&apos;s language, workflows, and compliance requirements out of the box.</p>
+          <h2 className="section-title">Built for builders. <span className="text-gradient-premium">Open for everyone.</span></h2>
+          <p className="section-sub">Production-grade AI infrastructure. One API. No boilerplate. Launch your first application today.</p>
         </div>
         <div className="industries-grid">
           {industries.map((ind, i) => (
