@@ -54,6 +54,10 @@ const projects = [
 ]
 
 export default function Showcase() {
+  const [imageIndices, setImageIndices] = useState({
+    FolioML: 0,
+    SalesSetter: 0
+  })
   const [lightboxImg, setLightboxImg] = useState(null)
 
   // Prevent scrolling when lightbox is open
@@ -66,6 +70,33 @@ export default function Showcase() {
     return () => { document.body.style.overflow = '' }
   }, [lightboxImg])
 
+  const handlePrevImage = (projectName, projectImages) => {
+    setImageIndices((prev) => {
+      const idx = prev[projectName] || 0;
+      return {
+        ...prev,
+        [projectName]: idx === 0 ? projectImages.length - 1 : idx - 1
+      }
+    })
+  }
+
+  const handleNextImage = (projectName, projectImages) => {
+    setImageIndices((prev) => {
+      const idx = prev[projectName] || 0;
+      return {
+        ...prev,
+        [projectName]: idx === projectImages.length - 1 ? 0 : idx + 1
+      }
+    })
+  }
+
+  const handleDotClick = (projectName, imgIndex) => {
+    setImageIndices((prev) => ({
+      ...prev,
+      [projectName]: imgIndex
+    }))
+  }
+
   return (
     <section id="showcase">
       <div className="container">
@@ -74,52 +105,107 @@ export default function Showcase() {
           <p className="section-sub">Real AI-powered products we've designed and deployed for modern businesses.</p>
         </div>
 
+        {/* Stacked Case Studies */}
         <div className="showcase-projects">
-          {projects.map((project, index) => (
-            <div key={project.name} className="showcase-bento fade-up">
-              {/* Left Side: Content & Stats */}
-              <div className="sb-content">
-                <div className="sb-badge">Case Study</div>
-                <h3 className="sb-title">{project.name}</h3>
-                <p className="sb-subtitle">{project.subtitle}</p>
-                <p className="sb-desc">{project.description}</p>
-                
-                <div className="sb-stats-grid">
-                  {project.stats.map((stat, i) => (
-                    <div key={i} className="sb-stat">
-                      <div className="sb-stat-val">{stat.value}</div>
-                      <div className="sb-stat-lbl">{stat.label}</div>
-                    </div>
-                  ))}
-                </div>
-                
-                <div className="sb-features">
-                  {project.highlights.map((h, i) => (
-                    <div key={i} className="sb-feature">
-                      <svg className="sb-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{color:'var(--primary)',flexShrink:0,marginTop:'2px'}}><polyline points="20 6 9 17 4 12"/></svg>
-                      <span>{h}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+          {projects.map((project, index) => {
+            const isReverse = index % 2 !== 0
+            const currentImageIndex = imageIndices[project.name] || 0
 
-              {/* Right Side: Gallery Bento */}
-              <div className="sb-gallery">
-                <div className="sb-gallery-main" onClick={() => setLightboxImg(project.images[0].src)}>
-                  <img src={project.images[0].src} alt={project.images[0].label} />
-                  <div className="sb-img-overlay"><span className="sb-img-label">{project.images[0].label}</span></div>
+            return (
+              <div 
+                key={project.name} 
+                className={`showcase-project-card fade-up ${isReverse ? 'reverse-layout' : ''}`}
+              >
+                <div className="showcase-bento">
+                  {/* Left Side: Content */}
+                  <div className="sb-content">
+                    <div className="sb-badge">Case Study</div>
+                    <h3 className="sb-title">{project.name}</h3>
+                    <p className="sb-subtitle">{project.subtitle}</p>
+                    <p className="sb-desc">{project.description}</p>
+                    
+                    <div className="sb-tech-stack">
+                      {project.techStack.map((tech) => (
+                        <span key={tech} className="tech-badge">{tech}</span>
+                      ))}
+                    </div>
+                    
+                    <div className="sb-features">
+                      {project.highlights.map((h, i) => (
+                        <div key={i} className="sb-feature">
+                          <svg className="sb-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{color:'var(--primary)',flexShrink:0,marginTop:'2px'}}><polyline points="20 6 9 17 4 12"/></svg>
+                          <span>{h}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Right Side: Image Gallery Carousel */}
+                  <div className="sb-gallery-carousel-wrapper">
+                    <button 
+                      className="sb-carousel-nav-btn prev" 
+                      onClick={() => handlePrevImage(project.name, project.images)} 
+                      aria-label="Previous image"
+                    >
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                    </button>
+
+                    <button 
+                      className="sb-carousel-nav-btn next" 
+                      onClick={() => handleNextImage(project.name, project.images)} 
+                      aria-label="Next image"
+                    >
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    </button>
+
+                    <div 
+                      className="sb-carousel-track"
+                      style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
+                    >
+                      {project.images.map((img, i) => (
+                        <div 
+                          key={i} 
+                          className={`sb-carousel-slide ${currentImageIndex === i ? 'active' : ''}`}
+                          onClick={() => setLightboxImg(img.src)}
+                        >
+                          <img src={img.src} alt={img.label} />
+                          <div className="sb-img-overlay">
+                            <span className="sb-img-label">{img.label}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="sb-carousel-dots">
+                      {project.images.map((_, i) => (
+                        <button
+                          key={i}
+                          className={`sb-carousel-dot ${currentImageIndex === i ? 'active' : ''}`}
+                          onClick={() => handleDotClick(project.name, i)}
+                          aria-label={`Go to image ${i + 1}`}
+                        />
+                      ))}
+                    </div>
+                  </div>
                 </div>
-                <div className="sb-gallery-sub">
-                  {project.images.slice(1).map((img, i) => (
-                    <div key={i} className="sb-gallery-item" onClick={() => setLightboxImg(img.src)}>
-                      <img src={img.src} alt={img.label} />
-                      <div className="sb-img-overlay"><span className="sb-img-label">{img.label}</span></div>
+
+                {/* Bottom stats horizontal list */}
+                <div className="sb-stats-horizontal">
+                  {project.stats.map((stat, i) => (
+                    <div key={i} className="sb-stat-card">
+                      <div className="sb-stat-icon-wrapper">
+                        {stat.icon}
+                      </div>
+                      <div className="sb-stat-info">
+                        <div className="sb-stat-val">{stat.value}</div>
+                        <div className="sb-stat-lbl">{stat.label}</div>
+                      </div>
                     </div>
                   ))}
                 </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </div>
 

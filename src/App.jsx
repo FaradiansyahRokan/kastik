@@ -4,7 +4,6 @@ import ParticlesBackground from './components/ParticlesBackground'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Trust from './components/Trust'
-import Personas from './components/Personas'
 import Problems from './components/Problems'
 import Solution from './components/Solution'
 import Features from './components/Features'
@@ -29,7 +28,6 @@ export default function App() {
       <Navbar />
       <Hero />
       <Trust />
-      <Personas />
       <Problems />
       <Solution />
       <Features />
